@@ -19,11 +19,21 @@ Get instant predictions for your max bouldering and sport climbing grades.
 Optionally, input your actual max grades for both categories to help improve the model.
 
 ## Features
+
 Machine Learning Models: Random Forest and Gradient Boosting models trained on a dataset from Power Company Climbing.
 Real-Time Predictions: Get real-time climbing grade predictions based on various metrics.
 User Feedback: Allows users to provide feedback by entering their actual grades, which is then stored in MongoDB for future model improvement.
 
+## Files in this repo
+
+The main notebook is climbing-performance-metrics-analysis.ipynb
+app.py is the Streamlit app
+Export-feedback-mongodb.ipynb exports user submitted data from Mongodb
+There are a number of csv input files which are either exports of data from the main notebook or MongoDB
+Additionally there are a large number of pkl files which I am using to run the model on Streamlit
+
 ## Technologies used
+
 Python
 Streamlit
 MongoDB
